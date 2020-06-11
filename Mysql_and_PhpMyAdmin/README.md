@@ -1,22 +1,22 @@
 Simple Mysql with PhpMyAdmin
 
-1. Up the compose
+### 1. Up the compose
 ```
     docker-compose up -d
 ```
-2. Access phpmyadmin
+### 2. Access phpmyadmin
 ```
-    your_ip:8183
+    http://ip:80
     Server: mysql
     Username: root/user
     Password: root/user
 ```
-3. Access mysql on terminal
+### 3. Access mysql on terminal
 ```
     docker exec -it mysql_container_name mysql -u root -p
 ```
 
-## Docker phpmyadmin ENV
+### Docker phpmyadmin ENV
 <table>
 <tr>
 <td>PMA_ARBITRARY </td>
@@ -31,3 +31,10 @@ Simple Mysql with PhpMyAdmin
 <td> define port of the MySQL server</td>
 </tr>
 </table>
+
+
+### For Remotely Root Login
+- docker exec -it mariadb mysql -u root -p
+- mysql> use mysql
+- mysql>SELECT host, user, password FROM user WHERE user = 'root';
+- mysql>GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password';
