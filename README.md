@@ -7,7 +7,7 @@ A simple web app for demonstration,testing & implementation in a container based
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
 
-#### If you find issues with the repo, feel free to create a PR and suggest fixes!
+#### If you find issues with this repo, feel free to create a PR and suggest fixes!
 
 (or)
 
