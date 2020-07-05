@@ -21,6 +21,9 @@ services:
         - 3306:3306
 
   phpmyadmin:
+  
+  #If u want to use phpMyadmin lightweight Version
+  # image: nnsp/phpmyadmin-alpine
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
     links:
